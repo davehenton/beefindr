@@ -1,7 +1,18 @@
 import {LocationBasedModel} from './location-based.model';
+import '@firebase/firestore';
+import firebase from '@firebase/app';
 
 
 export class BeeKeeper extends LocationBasedModel {
+
+  public email = '';
+  public firstname = '';
+  public surname = '';
+  public streetname = '';
+  public streetnr = '';
+  public postcode = '';
+  public place = '';
+  public country = '';
 
   /**
    * Constructor. Due to the order in which super/subclasses are initialized
